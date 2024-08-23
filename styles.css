@@ -1,0 +1,157 @@
+/* General Styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", sans-serif;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+/* Hero Slider Section */
+.carousel-item {
+  height: 1080px;
+    
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+   
+}
+
+
+
+
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffff ;
+    background-color: rgba(0, 0, 0, 0.5); /* Black overlay */
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+}
+
+.carousel-caption h1 {
+    font-size: 3.5rem;
+    
+    margin-bottom: 10px;
+}
+
+.carousel-caption p {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.carousel-caption .btn {
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    transition: 0.3s ease;
+    background: white;
+    color: black;
+    font-family: "Righteous", sans-serif;
+}
+
+.carousel-caption .btn:hover {
+    background-color: lightskyblue;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1);
+}
+
+/* Feature Section */
+#features {
+    background-color: #f8f9fa;
+}
+
+.feature-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.feature-card img {
+    transition: transform 0.3s ease;
+    width: 100%;
+    height: auto;
+}
+
+.feature-card img:hover {
+    transform: scale(1.05);
+}
+
+.feature-card .feature-content {
+    transition: background-color 0.3s ease;
+}
+
+.feature-card .btn {
+    margin-top: 10px;
+    transition: 0.3s ease;
+    background: white;
+    color: #000;
+    font-family: "Righteous", sans-serif;
+}
+
+.feature-card .btn:hover {
+    background-color: deepskyblue;
+    color: white;
+    
+}
+
+.container-text{
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.container-text h2{
+  font-size: 25px;
+  font-weight: 300;
+}
+
+
+.container-text h4{
+  font-size: 20px;
+  font-weight: 350;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .carousel-caption h1 {
+        font-size: 2rem;
+    }
+    
+   .carousel-item{
+     max-height: 440px;
+   }
+
+    .carousel-caption p {
+        font-size: 0.9rem;
+    }
+
+    .carousel-caption .btn {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 576px) {
+   .feature-card .feature-content {
+        padding: 20px 10px;
+    }
+}
